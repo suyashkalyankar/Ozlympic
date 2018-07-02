@@ -1,0 +1,65 @@
+There are three sports in the
+Ozlympic: swimming, cycling and running. There are four types of athletes, swimmers, cyclists,
+sprinters (who can compete in swimming, cycling and running respectively) and superAthletes
+who can compete in all three games.
+All participants including athletes and officials have a unique ID. Their personal information is also
+stored including name, age and the state (of Australia) they represent. Assume gender is NOT
+recorded and NOT relevant.
+Points will be rewarded to the winners of games. In each game, a first place worth 5, a second place
+attracts 2 points and a third place is 1 point. No points for the rest. Each athlete might have points
+carried over from the previous games. Each athlete should have a compete() method which will
+randomly generate a time between 10 to 20 seconds for running, 100 to 200 seconds for swimming
+and 500 to 800 seconds for cycling.
+Each game has a unique game ID such as "S01", "C02" ..."R05". Each game has one official as the
+referee. Assume each game can have at most 8 athletes to compete. A game will be cancelled
+unless there are more than 4 participants. Official is the one that can summarise the score of each
+game.
+
+PART 2:
+
+Possible errors in your program should be handled by the Exception mechanism of Java. That
+include:
+- GameFullException when trying to add an athlete to a game which already has 8 athletes
+registered
+- WrongTypeException when trying to add an athlete to a wrong type of game e.g assigning a
+swimmer to a running game. Note, super athletes can participate in all three types of games.
+This exception is also for attempts of assigning an athlete as an official or assigning an official to a
+game.
+- TooFewAthleteException when trying to run a game, which has less than 4 athletes
+registered.
+- NoRefereeException when trying run a game which has no official appointed.
+
+PART 3:
+Your program should be able to handle external data sources.
+It can read an ASCII file “participants.txt” which looks like this
+Oz1123, officer, Derek, 21, WA
+Oz3434, sprinter, Mary, 35, VIC
+Oz0091, super, Hannah, 24, NSW
+Oz1234, swimmer, Beck, 30, TAS
+You can assume that
+1. the state information is always present and correct.
+2. possible states are ACT, NSW, NT, QLD, SA, TAS, VIC and WA.
+3. the type information is always correct if present
+4. possible types are officer, sprinter, swimmer, cyclist and super (for super athletes)
+5. no one has more than two types or registered with two states
+6. age is an integer and is always correct.
+Your program should only read in valid data entries
+Oz1123, officer, Derek, 21, WA
+, sprinter, Mary, 35, VIC // ignored, missing ID
+Oz1123, officer, Derek, 21, WA // ignored, duplicates
+Oz1234, , Beck, 30, TAS // ignored, missing type
+
+
+
+
+Part 4: GUI 
+Your program should have a graphical interface to facilitate user interaction. It should support the following functionalities through mouse operations:
+• Create a new game either running, cycling or swimming and select a group of athletes for that game;
+• Assign an official to that game and run the game;
+• One game can only run once. The result will be stored in “gameResults.txt” or the database.
+• A new game may have the same athletes and official as a previous game. However the game ID will be different.
+• Display the results, e.g. time + the point for each athlete, after the game completes;
+• Display all finished games including the name of the referee and three winners for each game;
+• Display the points of all athletes.
+• Real-time game simulation. The real time position of each athlete in a game will be animated as the game progresses, for example as a bar, or a moving icon. Note this is a challenge task. You should only attempt this requirement after successful completion of other parts.
+• Errors and exceptions need to be handled gracefully through the GUI as well, e.g. running a game without an official, assigning a swimmer to a cycling game, no database and file.
