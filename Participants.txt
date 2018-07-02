@@ -1,0 +1,30 @@
+Oz0078,cyclist,Andy,29,QLD
+Oz0034,cyclist,Ali,29,TAS
+Oz0089,sprinter,Rahul,28,VIC
+Oz0010,sprinter,Homy,28,QLD
+Oz2423,swimmer,Ashish,25,ACT
+Oz7426,sprinter,     ,28,VIC 
+Oz0091,super,Hannah,24,NSW
+Oz1234,swimmer,   ,30,TAS
+Oz3434,sprinter,Mary,35,VIC
+Oz2678,super,Joshua,23,TAS
+Oz8989,official,sunil,35,WA
+Oz1236,cyclist,Suyash,24,SA
+      ,cyclist,Sammy,26,ACT
+Oz8768,super,Ed,29,VIC
+Oz3567,official,Ankur,28,VIC
+Oz4567,       ,Lokesh,23,ACT
+Oz1123,official,Derek,21,WA
+Oz8798,super,Ramu ,29,VIC
+Oz3367,official,Thor,28,VIC
+Oz4167, sprinter ,Loky,23,ACT
+Oz12223,official,Spiderman,21,WA
+Oz1134,sprinter,Brendon,28,WA
+Oz2456,sprinter,Rick,32,TAS
+Oz3789,swimmer,Aleks,24,QLD
+Oz4567,cyclist,Yash,23,NT
+Oz5324,cyclist,Seby,27,NT
+Oz6789,swimmer,Cass,23,SA
+Oz0022,super,Yogi,25,SA
+Oz0012,swimmer,Owen,29,WA
+Oz0050,swimmer,Gwen,29,QLD
